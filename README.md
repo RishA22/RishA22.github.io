@@ -1,7 +1,3 @@
-# my_portfolio
-
-My portfolio
-
 # Rishika Arora - Portfolio Task
 
 [My portfolio link](https://RishA22.github.io/)
