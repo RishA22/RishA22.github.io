@@ -6,7 +6,7 @@
   --brand: #f6f6f6;
   --action: #fa530c;
   --white: #ffffff;
-  --base: #73ca5e;
+  --base: #38608d;
   --base-light: #cdb5df;
   --base-dark: #0d0711;
   --black: #111111;
@@ -141,11 +141,26 @@ header button {
 }
 
 .logo {
+  display: flex;
   height: 30px;
   font-size: 1.5rem;
   font-family: "Architects Daughter", cursive;
-  color: var(--action)
 }
+
+.color1 {
+  color: var(--white);
+}
+
+.color2 {
+  color: var(--action);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 1rem; */
+  /* font-weight: 900; */
+}
+
 
 .logo:hover {
   cursor: default;
