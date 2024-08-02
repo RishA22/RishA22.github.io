@@ -12,9 +12,10 @@
 <body>
   <header>
     <div class="mobile-header">
-      <div class="logo">
+      <!-- <div class="logo">
         <p><span class="color1">R</span></p><span class="color2">.</span><span class="color1">Arora</span>
-      </div>
+      </div> -->
+      <img src="./assets/logo.png" alt="Code Story Logo" class="logo">
       <button type="button" class="hamburger-button">
         <img class="hamburger-icon" src="./assets/hamburger.svg"
           alt="Three horizontal lines, positioned one above the other." />
@@ -24,40 +25,102 @@
     <nav class="desktop-nav" aria-label="Primary">
       <ul>
         <li>
-          <a href="">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="">Project</a>
+          <a href="#project">Project</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
+
     <nav class="mobile-nav display-none" aria-label="Primary">
       <ul>
         <li>
-          <a href="">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="">Project</a>
+          <a href="#project">Project</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
+
   </header>
 
-  <section class="hero">
-    <div class="section_pic-container">
-      <img src="./assets/profile-pic.png" alt="Rishika's profile picture" />
+  <section id="about" class="hero">
+    <img src="./assets/profile-pic.png" alt="Rishika's profile picture" />
+
+    <div>
+      <h1>Hello, I'm Rishika. I love to Code. Passion to learn more about coding brings me here to SheCodes.
+      </h1>
+      <a href="https://www.linkedin.com/in/rishika-arora-1903011a5/" class="btn-primary">Know More</a>
     </div>
-    <div class="section_text">
+    <!-- <div class="section_text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Rishika Arora</h1>
-      <p class="section__text__p2">SheCodes' Cohort</p>
-      <div class="btn-container">
+      <p class="section__text__p2">SheCodes' Cohort</p> -->
+    <!-- <div class="btn-container">
         <a href="#" class="btn-primary">Know more</a>
-      </div>
+      </div> -->
   </section>
+
+  <section id="project" class="articles-container">
+    <article>
+      <img class="icon" src="./assets/lightning.svg"
+        alt="A jagged lightning bolt, thick at the top and sharp at the bottom" />
+      <h2>She Codes Website</h2>
+      <p>
+        She Codes Website made using HTML and CSS.
+      </p>
+      <a href="https://github.com/RishA22/my_first_website" class="btn-primary">Github</a>
+    </article>
+    <article>
+      <img class="icon" src="./assets/python.svg" alt="A Python icon" />
+      <h2>Python Project</h2>
+      <p>
+        Coming Soon...
+      </p>
+      <a href="" class="btn-primary">Github</a>
+    </article>
+
+    <article>
+      <img class="icon" src="./assets/javascript.svg" alt="Javascript Icon" />
+      <h2>Javascript Project</h2>
+      <p>
+        Coming Soon..
+      </p>
+      <a href="" class="btn-primary">Github</a>
+    </article>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Get in touch</h2>
+    <form>
+      <label for="your-name">Your Name</label>
+      <input type="text" id="your-name">
+      <label for="city">Your City</label>
+      <select name="city-selection" id="city">
+        <option value="Brisbane">Brisbane</option>
+        <option value="Perth">Perth</option>
+        <option value="Melbourne">Melborne</option>
+      </select>
+      <label for="message">Your Message</label>
+      <textarea name="message-text" id="message" rows="10"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/rishika-arora-1903011a5/">
+        <img class="socials-icon" src="./assets/linkedin.svg" alt="LinkedIn logo linking to the linkedin profile" />
+      </a>
+      <a href="https://github.com/RishA22/">
+        <img class="socials-icon" src="./assets/github.svg"
+          alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
+      </a>
+    </footer>
+</body>
