@@ -90,6 +90,7 @@ select {
 .btn-primary:hover {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
   transform: translateY(-4px);
+  background-color: rgb(230, 182, 92);
 }
 
 /* header */
@@ -158,9 +159,14 @@ header button {
 /* .mobile-nav */
 .mobile-nav a {
   text-decoration: none;
+  background-color: var(--action);
   color: var(--black);
   display: block;
-  padding: 4px 16px;
+  padding: 20px 20px;
+}
+
+.mobile-nav a:hover {
+  background-color: rgb(230, 182, 92);
 }
 
 /* Hide the checkbox input */
@@ -176,23 +182,28 @@ header button {
 /* Show mobile menu when checkbox is checked */
 .menu-toggle:checked~.mobile-nav {
   display: block;
-  background-color: var(--white);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 10;
 }
 
 /* Ensure mobile nav is hidden by default */
 .mobile-nav {
   display: none;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  right: 1%;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
+
+  .menu-toggle:checked~.mobile-nav {
+    display: none;
+  }
+
   .mobile-nav {
     display: none;
   }
+
 }
 
 /* .desktop-nav */
@@ -368,7 +379,7 @@ p {
 
 
 .contact-form button:hover {
-  color: white;
+  background-color: rgb(230, 182, 92);
 }
 
 
