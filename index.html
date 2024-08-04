@@ -12,34 +12,44 @@
 <body>
   <header>
     <div class="mobile-header">
-      <!-- <div class="logo">
-        <p><span class="color1">R</span></p><span class="color2">.</span><span class="color1">Arora</span>
-      </div> -->
       <img src="./assets/logo.png" alt="Code Story Logo" class="logo">
-      <button type="button" class="hamburger-button">
+
+      <!-- Hidden Checkbox -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <!-- Hamburger Icon as Label -->
+      <label for="menu-toggle" class="hamburger-button">
+        <img class="hamburger-icon" src="./assets/hamburger.svg" alt="Menu" />
+      </label>
+
+      <!-- <button type="button" class="hamburger-button">
         <img class="hamburger-icon" src="./assets/hamburger.svg"
           alt="Three horizontal lines, positioned one above the other." />
-      </button>
+      </button> -->
     </div>
 
     <nav class="desktop-nav" aria-label="Primary">
       <ul>
         <li>
-          <a href="#about">About</a>
+          <a href="about.html" class="btn-primary">About</a>
         </li>
         <li>
-          <a href="#project">Project</a>
+          <a href="#project" class="btn-primary">Project</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" class="btn-primary">Contact</a>
         </li>
       </ul>
     </nav>
 
-    <nav class="mobile-nav display-none" aria-label="Primary">
+    <!-- <nav class="mobile-nav display-none"  -->
+
+    <nav class="mobile-nav" aria-label="Primary">
+
       <ul>
+
         <li>
-          <a href="#about">About</a>
+          <a href="about.html">About</a>
         </li>
         <li>
           <a href="#project">Project</a>
@@ -48,28 +58,22 @@
           <a href="#contact">Contact</a>
         </li>
       </ul>
+      </div>
     </nav>
 
   </header>
 
-  <section id="about" class="hero">
+  <section id="Profile" class="hero">
     <img src="./assets/profile-pic.png" alt="Rishika's profile picture" />
-
     <div>
       <h1>Hello, I'm Rishika. I love to Code. Passion to learn more about coding brings me here to SheCodes.
       </h1>
-      <a href="https://www.linkedin.com/in/rishika-arora-1903011a5/" class="btn-primary">Know More</a>
+      <a href="about.html" class="btn-primary">Know More</a>
     </div>
-    <!-- <div class="section_text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Rishika Arora</h1>
-      <p class="section__text__p2">SheCodes' Cohort</p> -->
-    <!-- <div class="btn-container">
-        <a href="#" class="btn-primary">Know more</a>
-      </div> -->
   </section>
 
   <section id="project" class="articles-container">
+
     <article>
       <img class="icon" src="./assets/lightning.svg"
         alt="A jagged lightning bolt, thick at the top and sharp at the bottom" />
@@ -79,6 +83,7 @@
       </p>
       <a href="https://github.com/RishA22/my_first_website" class="btn-primary">Github</a>
     </article>
+
     <article>
       <img class="icon" src="./assets/python.svg" alt="A Python icon" />
       <h2>Python Project</h2>
@@ -96,22 +101,19 @@
       </p>
       <a href="" class="btn-primary">Github</a>
     </article>
+
   </section>
 
   <section id="contact" class="contact-form">
     <h2>Get in touch</h2>
-    <form>
+    <form action="https://formspree.io/f/mblroppv" method="POST">
       <label for="your-name">Your Name</label>
-      <input type="text" id="your-name">
-      <label for="city">Your City</label>
-      <select name="city-selection" id="city">
-        <option value="Brisbane">Brisbane</option>
-        <option value="Perth">Perth</option>
-        <option value="Melbourne">Melborne</option>
-      </select>
+      <input type="text" id="your-name" placeholder="Your Name">
+      <label for="email">Email</label>
+      <input type="text" id="your-email" placeholder="Your Email">
       <label for="message">Your Message</label>
-      <textarea name="message-text" id="message" rows="10"></textarea>
-      <input type="submit" value="Submit">
+      <textarea name="message-text" id="message" placeholder="Your Message" rows="10"></textarea>
+      <button type="submit" value="Submit">Send</button>
     </form>
 
     <footer>

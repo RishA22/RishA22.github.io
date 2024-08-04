@@ -3,13 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
-  --brand: #f6f6f6;
-  --brand1: #374F6A;
+  --brand: #374F6A;
   --action: #fa530c;
   --white: #ffffff;
-  --base: #38608d;
-  --base-light: #cdb5df;
-  --base-light1: #b3c2c0;
+  --base: #b3c2c0;
   --base-dark: #0d0711;
   --black: #111111;
 }
@@ -22,14 +19,12 @@ html {
   font-family: "Inter", sans-serif;
   color: var(--black);
   scroll-behavior: smooth;
-
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-
 }
 
 h1,
@@ -39,7 +34,6 @@ h4,
 h5,
 h6 {
   font-family: "Rubik", sans-serif;
-
 }
 
 body,
@@ -54,19 +48,16 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-
 }
 
 ol,
 ul {
   list-style: none;
-
 }
 
 img {
   max-width: 100%;
   height: auto;
-
 }
 
 input,
@@ -74,13 +65,11 @@ button,
 textarea,
 select {
   font: inherit;
-
 }
 
 /* Utilities */
 .display-none {
   display: none;
-
 }
 
 
@@ -96,13 +85,11 @@ select {
   border-radius: 4px;
   background-color: var(--action);
   transition: all 0.3s ease;
-
 }
 
 .btn-primary:hover {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
   transform: translateY(-4px);
-
 }
 
 /* header */
@@ -112,12 +99,10 @@ header .mobile-header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--white);
-
 }
 
 header button {
   all: unset;
-
 }
 
 @media (min-width: 768px) {
@@ -126,19 +111,16 @@ header button {
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
-
   }
 
   header nav ul {
     display: flex;
     gap: 24px;
     margin-right: 16px;
-
   }
 
   header .mobile-header .hamburger-icon {
     display: none;
-
   }
 }
 
@@ -150,33 +132,21 @@ header button {
 }
 
 
-/* .logo:hover {
-  cursor: default;
-} */
-
 @media (min-width: 768px) {
   header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
   }
 
   header nav ul {
     display: flex;
     gap: 24px;
     margin-right: 16px;
-
   }
-
-  /* header .logo {
-    font-size: 4rem;
-    height: 90px;
-  } */
 
   header .mobile-header .hamburger-icon {
     display: none;
-
   }
 }
 
@@ -191,13 +161,43 @@ header button {
   color: var(--black);
   display: block;
   padding: 4px 16px;
+}
 
+/* Hide the checkbox input */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger cursor */
+.hamburger-button {
+  cursor: pointer;
+}
+
+/* Show mobile menu when checkbox is checked */
+.menu-toggle:checked~.mobile-nav {
+  display: block;
+  background-color: var(--white);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Ensure mobile nav is hidden by default */
+.mobile-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
 }
 
 /* .desktop-nav */
 .desktop-nav {
   display: none;
-
 }
 
 @media (min-width: 768px) {
@@ -205,14 +205,11 @@ header button {
     text-decoration: none;
     font-size: larger;
     color: var(--black);
-
   }
 
   .desktop-nav {
     display: inline-block;
-
   }
-
 }
 
 .hero {
@@ -221,33 +218,10 @@ header button {
   align-items: center;
   text-align: center;
   padding: 20px;
-  background-color: var(--brand1);
+  background-color: var(--brand);
   margin: 0 auto;
 }
 
-/* .hero {
-  display: flex;
-  background-color: var(--base-light);
-  padding: 56px 16px;
-  border-radius: 10px;
-  margin: 5px 10px;
-  display: flex;
-  height: 80vh;
-  background-color: var(--brand);
-  align-items: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  align-content: center;
-  justify-content: space-around;
-} */
-
-/* .hero h1 {
-  font-size: 2rem;
-  margin-bottom: 24px;
-  color: var(--white);
-
-} */
 .hero img {
   width: 150px;
   /* Adjust size as needed */
@@ -256,7 +230,8 @@ header button {
   margin-bottom: 20px;
 }
 
-.hero h1 {
+.hero h1,
+p {
   font-size: 1.5rem;
   /* Responsive text size */
   margin-bottom: 20px;
@@ -283,59 +258,11 @@ header button {
     font-size: 2.5rem;
     /* Larger text for bigger screens */
   }
-}
 
-/* @media (min-width: 768px) {
-
-  .hero,
-  .section_pic-container {
-    padding: 120px 56px;
+  .hero p {
+    font-size: 1.8rem;
   }
-
-  .hero h1 {
-    font-size: 3.5rem;
-    max-width: 70%;
-  }
-
-
-} */
-
-/* .hero img {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
-
-.section_pic-container img {
-  max-width: 100%;
-  height: 300px;
-  margin: auto;
-} */
-
-/* .section__text {
-  align-self: center;
-  text-align: center;
-}
-
-.section__text p {
-  font-weight: 600;
-  margin: auto;
-}
-
-.section__text__p1 {
-  text-align: center;
-  font-size: small;
-}
-
-.section__text__p2 {
-  margin-bottom: 1rem;
-}
-
-.title {
-  font-size: small;
-  text-align: center;
-} */
 
 .articles-container {
   display: flex;
@@ -346,10 +273,8 @@ header button {
   /* Center the container horizontally */
 }
 
-
-
 .articles-container article {
-  background-color: var(--base-light1);
+  background-color: var(--base);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -377,6 +302,7 @@ header button {
 .articles-container article p {
   margin-bottom: 20px;
   flex-grow: 1;
+  color: var(--black)
 }
 
 .articles-container article a.btn-primary {
@@ -391,7 +317,6 @@ header button {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-
   }
 
   .articles-container article {
@@ -406,58 +331,57 @@ header button {
   padding: 48px 16px;
   border-radius: 10px;
   margin: 5px 10px;
-
 }
 
 .contact-form input,
-.contact-form select {
+.contact-form select,
+.contact-form button {
   display: block;
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
-
 }
 
 .contact-form textarea {
   display: block;
   width: 100%;
   padding: 8px;
-
 }
 
 .contact-form label {
   display: block;
   width: 100%;
-
 }
 
 .contact-form h2 {
   color: var(--base-dark);
   margin-bottom: 16px;
-
 }
 
-.contact-form input[type="submit"] {
+.contact-form button {
   background-color: var(--action);
   border: 0;
   margin-top: 8px;
   cursor: pointer;
+  transition-duration: 0.4s
 }
+
+
+.contact-form button:hover {
+  color: white;
+}
+
 
 @media (min-width: 768px) {
   .contact-form h2 {
     text-align: center;
     font-size: 2.5rem;
-
   }
 
   .contact-form form {
     max-width: 60%;
     margin: 40px auto;
-
   }
-
-
 }
 
 /* footer */
@@ -465,13 +389,13 @@ footer {
   padding: 16px;
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .socials-icon {
   width: 40px;
   height: 40px;
-
 }
 
 @media (min-width: 768px) {
@@ -482,9 +406,5 @@ footer {
   footer .socials-icon {
     margin-left: 20px;
     margin-right: 20px;
-
   }
-
-
 }
-
