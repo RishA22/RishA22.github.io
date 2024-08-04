@@ -32,7 +32,7 @@
   we can make changes by navigating the directory that contains the deployed website.
 - Use media queries for responsive design so that the design can be effectively visible on desktop,
   mobile phone, and any other device as per the screen size.
-- To define different parts of the HTML page, sematic HTML tags like: <header>, <nav>, <article>, <div>, <section> are used.
+- To define different parts of the HTML page, sematic HTML tags like: <header>, <nav>, <article> are used.
 
 ### Bonus
 
