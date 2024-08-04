@@ -36,8 +36,7 @@
 
 ### Bonus
 
-- Button containers are used in CSS files defining the cursor shape, color on select, color on and after
-  hover. Those containers are reused in html file.
+- Button containers are used in CSS files defining the cursor shape, color on select, color on and after hover. Those containers are reused for different elements.
 
 ### Screenshots
 
